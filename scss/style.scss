@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 @import 'normalize';
 
@@ -11,7 +12,7 @@
 
 
 html {
-	font: 10px/1.6 'Open Sans', 'PT Sans Narrow', 'Fjalla One', sans-serif;
+	font: 10px/1.6 'Open Sans', 'PT Sans Narrow', 'Fjalla One', 'Lato', sans-serif;
 	height: 100%;
 	
 }
@@ -74,7 +75,9 @@ body {
 		}
 	}
 	&__comment {
+		font-family: 'Lato';
 		font-size: 2rem;
+		line-height: 1.6;
 		
 		
 	}

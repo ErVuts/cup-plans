@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -315,7 +316,7 @@ template {
   box-sizing: border-box; }
 
 html {
-  font: 10px/1.6 'Open Sans', 'PT Sans Narrow', 'Fjalla One', sans-serif;
+  font: 10px/1.6 'Open Sans', 'PT Sans Narrow', 'Fjalla One', 'Lato', sans-serif;
   height: 100%; }
 
 body {
@@ -380,4 +381,6 @@ body {
     .product__type--lg {
       padding-top: 3%; }
   .product__comment {
-    font-size: 2rem; }
+    font-family: 'Lato';
+    font-size: 2rem;
+    line-height: 1.6; }
