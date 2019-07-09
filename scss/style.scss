@@ -7,14 +7,13 @@
 
 
 * {
+
 	box-sizing: border-box;
+
 }
-
-
 html {
 	font: 10px/1.6 'Open Sans', 'PT Sans Narrow', 'Fjalla One', 'Lato', sans-serif;
 	height: 100%;
-	
 }
 
 body {
@@ -27,11 +26,13 @@ body {
 	justify-content: center;
 }
 
+
+
 .product {
 	display:flex;
 	align-items:center;
-    flex-direction:column;
-	margin-top: 40px;
+ 	flex-direction:column;
+  	margin-top: 40px;
 	background-color: #fff;
 	width: 360px;
 	height: 440px;
@@ -45,41 +46,57 @@ body {
 	&--right {
 		margin-right: 15%;
 	}
-	
-	&--lg {
-		height: 500px;
-		margin-right: 30px;
-		margin-left: 30px;
-	}
+  	&--center {
+   		margin-left: 1%;
+   		margin-right: 1%;
+  }
+	// &--lg {
+	// 	height: 500px;
+	// 	margin-right: 30px;
+	// 	margin-left: 30px;
+	// }
+
 	&__price {
 		padding-top: 35px;
 		color:#02995b;
 		font-size: 6rem;
 		font-family:'Fjalla One';
 	}
+
 	&__img {
 	width: 135px;
 	height: 134px;
 	max-width:90%;
 	max-height:60%;
 	margin-left: 20px;
-	&--lg {
-		margin-top: 30px;
+
+	// &--lg {
+	// 	margin-top: 30px;
+	// }
+
 	}
-	}
+
 	&__type {
 		font-size: 5rem;
 		padding-top: 2%;
-		&--lg {
-			padding-top: 3%;
-		}
+		// &--lg {
+		// 	padding-top: 3%;
+		// }
+    
 	}
+
 	&__comment {
 		font-family: 'Lato';
 		font-size: 2rem;
 		line-height: 1.6;
-		
-		
 	}
-
+  &:hover,
+  &:focus,
+  &:active {
+    height: 500px;
+  }
+  &:hover > &__type,
+  &:focus > &__type {
+    padding-top: 9.5%;
+  }
 }
